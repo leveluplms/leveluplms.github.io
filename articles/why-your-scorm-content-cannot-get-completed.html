@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 <title>Level Up LMS - Knowledge Hub</title>
 <style>
     body {
@@ -49,9 +49,18 @@
     </nav>
     <main> 
         <section>
-            <h2>Latest Articles</h2>
+            <h2>Why your SCORM content cannot get completed</h2>
+            <strong>If your SCORM content cannot get completed, there are two possible reasons:</strong>
             <ul>
-                <li><a href="articles/why-your-scorm-content-cannot-get-completed.html">Why your SCORM content cannot get completed</a></li> 
+                <li>
+                    The completion rules are not properly set during production.
+The completion rules have to be set within the tool used to create the SCORM file. To make sure that your SCORM content works properly, you can always test it in <a href="https://cloud.scorm.com/sc/guest/SignInForm">SCORM Cloud</a>.
+                </li>
+
+                <li>
+                    SCORM content that’s embedded in iFrames doesn’t auto-refresh when completed.
+Your SCORM content might be designed to be executed inside a pop-up window and send the data after the window closes. When embedded, the SCORM content doesn't send any data before being unloaded, and there’s no way around this restriction. You can verify whether or not that’s the case with your authoring tool's support service.
+                </li>
             </ul>
         </section>
     </main>
